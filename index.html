@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en-CA">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=500, initial-scale=1" />
+
+    <!-- Change this to your name-->
+    <meta name="author" content="Minh Hien Nguyen" />
+
+    <title>WEB222 Assignment 4 Music App</title>
+    <!-- Classless CSS Stylesheet - https://watercss.kognise.dev/ -->
+    <link rel="stylesheet" href="./css/water.css" />
+    <style>
+      .header {
+          text-align: center; /* Center the text in the header */
+      }
+  </style>
+  </head>
+
+  <body class="bodyAnimate">
+    <header class="header">
+            <!-- Header content -->
+      <div class="header-title">
+        <h1 style="line-height: 1; margin-top: 0%; margin-bottom: 2px">Melody</h1>
+        <p style="line-height: 0; margin-bottom: 0px">Unleash the melody</p>
+      </header>
+      <br>
+      <hr />
+      <p style="margin-bottom: 0.2px">Select your favorite artist!</p>
+      <br>
+      <nav id="menu">
+        <!-- Dynamically create your menu category buttons here -->
+      </nav>
+  
+      <hr />
+    <main>
+      <h2 id="selected-artist">
+        <!-- Dynamically update the selected artist title -->
+      </h2>
+
+      <table>
+        <thead>
+          <!-- Statically create the headings for your table here -->
+          <tr>
+            <th>Song Name</th>
+            <th>Year Recorded</th>
+            <th>Duration (mm:ss)</th>
+          </tr>
+        </thead>
+        <tbody id="songs">
+          <!-- Dynamically create your song rows here -->
+        </tbody>
+      </table>
+    </main>
+
+    <footer>Made by Minh Hien Nguyen - WEB222 Assignment 4</footer>
+
+    <!-- JavaScript Data Files -->
+    <script src="./js/artists.js"></script>
+    <script src="./js/songs.js"></script>
+
+    <!-- Main App JavaScript File -->
+    <script src="./js/app.js"></script>
+  </body>
+</html>
